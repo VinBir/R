@@ -140,14 +140,14 @@ if(wrd == pal){
 
 ####################### Finding missing number
 
+val <- 40
+num <- c(0:49,51:100)
 
-n <- c(0:49,51:100)
-a <- 400
 
-if(any(a == n)){
-  cat(a, "is present in the data")
+if(any(val == num)){
+  cat(val, "is present in the data")
 }else{
-  cat(a, "is missing in the data")
+  cat(val, "is missing in the data")
 }
 
 
