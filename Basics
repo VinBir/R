@@ -1,0 +1,116 @@
+library(tidyverse)
+library(XLConnect)
+library(splitstackshape)
+library(dsr)
+library(tidyverse)
+library(dplyr)
+library(tidyverse)
+library(stringr)
+library(reshape)
+library(stringr)
+library(RJDBC)
+library(rJava)
+library(mailR)
+library(lubridate)
+library(openxlsx)
+library(readxl)
+library(plyr)
+library(zoo)
+library(xts)
+
+
+############################################### Finding sum of vectors
+v <- c(1,2,3,4,5,6,7,8,9)
+sum1 <- 0
+for(i in v){
+  
+  sum1 <- sum1 + i
+}  
+
+sum1
+########## Finding sum of vectors using readline function
+
+num <- readline("Enter the sequence of numbers separated by comma : ")
+class(num)
+num<- strsplit(num,',')
+class(num)
+num <- as.numeric(unlist(num))
+
+sum1 <- 0
+for(i in num){
+  
+  sum1 <- sum1 + i
+}
+
+sum1
+
+
+
+######################### Finding avg of vectors
+
+n <- c(0,1,2,3)
+sum2 <- 0
+
+for(i in n){
+  sum2 <- sum2 + 1 
+}
+
+avg <- sum2/length(n)
+avg
+
+################################################
+
+############################## Separate odd even
+
+n <- c(0,1,2,3,4,5)
+odd <- 0
+even <- 0
+
+for(i in n){
+  
+  ifelse(i%%2 == 0, even <- append(even,i), odd <- append(odd,i))
+}
+
+odd <- odd[2:length(odd)]
+even <- even[2:length(even)]
+
+print(odd)
+print(even)
+
+################################################
+
+############## Finding square of numbers 
+
+
+s <- c(1,2,3,4,5)
+sqr<-0
+for(i in s){
+  sq <- i*i
+  sqr <- append(sqr,sq)
+}
+
+sqr <- sqr[2:length(sqr)]
+sqr
+
+###############################################
+
+####################### Reversing a string
+
+sm <- readline('Please enter a string value :')
+
+st<- sm
+st <- "SPOOL"
+st <- strsplit(st,"")
+class(st)
+st <- unlist(st)
+n <- sum(nchar(st)) +2
+nst <- ""
+
+for(i in st){
+  n <- n-1
+  nst <- append(nst,st[n-1])
+}
+
+nst <- nst[2:length(nst)]
+
+paste(nst,collapse = "")
