@@ -1,0 +1,14 @@
+###############################################
+
+####################### Finding missing number
+
+
+val <- 40
+num <- c(0:49,51:100)
+
+
+if(any(val == num)){
+  cat(val, "is present in the data")
+}else{
+  cat(val, "is missing in the data")
+}
