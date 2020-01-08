@@ -1,0 +1,29 @@
+################################################
+
+############## Finding square of numbers 
+
+
+s <- c(1,2,3,4,5)
+sqr<-0
+for(i in s){
+  sq <- i*i
+  sqr <- append(sqr,sq)
+}
+
+sqr <- sqr[2:length(sqr)]
+sqr
+
+################################################
+
+############## Finding cube of numbers 
+
+
+s <- c(1,2,3,4,5)
+cube<-0
+for(i in s){
+  cu <- i^3
+  cube <- append(cube,cu)
+}
+
+cube <- cube[2:length(cube)]
+cube
