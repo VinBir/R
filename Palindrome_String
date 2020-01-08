@@ -16,3 +16,4 @@ if(wrd == pal){
 }else{
   cat(wrd, "is not a Palindrome")
 }
+
