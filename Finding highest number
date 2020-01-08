@@ -1,4 +1,4 @@
-###############################################
+###################################################################################
 
 ####################### Finding highest number
 
@@ -10,3 +10,22 @@ tail(num, 1)                           # Highest number
 head(tail(num, 2),1)                   # Second Highest number
 head(tail(num, 3),1)                   # Third Highest number
 head(tail(num, n),1)                   # Generl equation for finding nth Highest number
+
+
+#############################  OR  ####################################################
+
+num <- c(5665,1615,5154,65564,69895646, 145)
+num <- sort(num, decreasing = F)
+
+length(num)
+num[1:length(num)]
+
+for (i in num) {
+  x = i
+  y = x+1
+  if(x >= y){
+  } 
+  print(x)
+}
+
+
