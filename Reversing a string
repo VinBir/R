@@ -1,0 +1,26 @@
+###############################################
+
+####################### Reversing a string
+
+sm <- readline('Please enter a string value :')
+st<- sm
+
+#OR
+
+st <- "SPOOL"
+
+st <- strsplit(st,"")
+class(st)
+st <- unlist(st)
+n <- sum(nchar(st)) +2
+nst <- ""
+
+
+for(i in st){
+  n <- n-1
+  nst <- append(nst,st[n-1])
+}
+
+nst <- nst[2:length(nst)]
+
+paste(nst,collapse = "")
