@@ -1,0 +1,12 @@
+###############################################
+
+####################### Finding highest number
+
+num <- c(5665,1615,5154,65564,69895646)
+num <- sort(num, decreasing = F)
+
+
+tail(num, 1)                           # Highest number
+head(tail(num, 2),1)                   # Second Highest number
+head(tail(num, 3),1)                   # Third Highest number
+head(tail(num, n),1)                   # Generl equation for finding nth Highest number
