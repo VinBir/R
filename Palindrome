@@ -1,0 +1,18 @@
+###############################################
+
+####################### Palindrome Or Not
+
+
+wrd <- "MADAM"
+pal <- rev(unlist(strsplit(wrd,"")))
+
+pal <- paste(pal,collapse = "")
+
+ifelse(wrd == pal, cat(wrd, "is a Palindrome"), cat(wrd, "is not a Palindrome"))
+
+
+if(wrd == pal){
+  cat(wrd, "is a Palindrome")
+}else{
+  cat(wrd, "is not a Palindrome")
+}
