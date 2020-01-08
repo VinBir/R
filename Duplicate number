@@ -1,0 +1,12 @@
+###############################################
+
+####################### Finding duplicate number
+
+num <- c(0:49,49:100)
+
+if(any(count(num)$freq>1)){
+  print("Duplicate")
+}else{
+   print("No Duplicate")
+  }
+
