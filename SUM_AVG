@@ -38,3 +38,4 @@ for(i in n){
 avg <- sum2/length(n)
 avg
 
+
