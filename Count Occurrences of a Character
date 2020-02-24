@@ -1,0 +1,17 @@
+# How to Count Occurrences of a Character in String
+
+wrd0 <- toupper('Today is monday')
+wrd1 <- toupper('Today is monday')
+wrd2 <- toupper('o')
+counter = 0
+
+wrd1 <- gsub(" ","",wrd1)
+wrd1 <- sort(unlist(strsplit(wrd1,"")))
+for (i in wrd1) {
+  if(wrd2==i){
+    counter = counter + 1
+  }
+}
+counter
+
+cat(paste("The occurrences of character ", wrd2, " in ", wrd0, " is/are "), counter)
