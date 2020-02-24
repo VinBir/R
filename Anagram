@@ -1,0 +1,11 @@
+#Anagram : A word or phrase formed by rearranging the letters of a different word or phrase
+#Example : wrd1 = 'Binary' & wrd2 = 'binary'
+
+wrd1 <- toupper(readline("Kindly enter the first word : "))
+wrd2 <- toupper(readline("Kindly enter the second word : "))
+wrd1 <- gsub(" ","",wrd1)
+wrd2 <- gsub(" ","",wrd2)
+wrd1 <- paste(sort(unlist(strsplit(wrd1,""))), collapse = "")
+wrd2 <- paste(sort(unlist(strsplit(wrd2,""))), collapse = "")
+
+ifelse(wrd1==wrd2, 'An Anagram', 'Not an Anagram')
