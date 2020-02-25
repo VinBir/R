@@ -1,0 +1,13 @@
+#Compare a value in another column
+
+df = data.frame(Year1 = c(1990, 1998, 1992, 1997), Year2 = c(1990, 1992, 1998, 2000))
+
+df$flag <- ifelse(df$Year1 %in% df$Year2, 1, 2)
+df
+
+# Result:
+#   Year1 Year2 flag
+#1  1990  1990    1
+#2  1998  1992    1
+#3  1992  1998    1
+#4  1997  2000    2
