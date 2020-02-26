@@ -1,7 +1,7 @@
 n <- 1:100
 
 for(i in n){
-  if(floor(sqrt(i)) == sqrt(i)){
+  if(floor(i^(1/2)) == i^(1/2)){
     cat(i, " It's a power of two\n")
   }else{
     cat(i, " NO, It's not a power of two\n")
