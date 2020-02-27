@@ -1,0 +1,17 @@
+# How to check if a number is binary?
+
+bin <- 011101104
+bin <- unlist(strsplit(as.character(bin),""))
+counter=0
+for (i in bin) {
+  if(i == 0 | i == 1){
+    counter = counter+1
+  }
+}
+if(length(bin)==counter){
+    print("Binary")
+}else{
+    print("Not Binary")
+  }
+
+
