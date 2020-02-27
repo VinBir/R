@@ -1,3 +1,5 @@
+# Write a program to find all prime number up to a given number?
+
 num = 61
 
 if (num == 2) {
