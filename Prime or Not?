@@ -1,0 +1,9 @@
+num = 61
+
+if (num == 2) {
+  "Prime Number"
+} else if (any(num %% (2:(num-1)) == 0)) {
+  print("Not a Prime Number")
+} else { 
+  print("Prime Number")
+}
