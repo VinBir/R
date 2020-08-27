@@ -1,0 +1,14 @@
+RR <- c("515","5156.11")
+df <- data.frame(RR, stringsAsFactors = F)
+
+R1 <- c("15515","8888","515","1566")
+R2 <- c("ABC","PL","ABC","PL")
+R3 <- c("999","888","777","666")
+df2 <- data.frame(R1,R2,R3, stringsAsFactors = F)
+
+for (i in 1:length(df2$R3)){
+  if (df2$R1[i] %in% df$RR){
+    df2$R2[i] <- "PL"
+  }
+  print(df2$R2[i])
+}
